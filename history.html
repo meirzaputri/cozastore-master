@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact</title>
+	<title>About</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -85,7 +85,7 @@
 								<a href="shoping-cart.html">Shoping Cart</a>
 							</li>
 
-							<li>
+							<li class="active-menu">
 								<a href="history.html">History</a>
 							</li>
 
@@ -97,7 +97,7 @@
 								<a href="about.html">About</a>
 							</li>
 
-							<li class="active-menu">
+							<li>
 								<a href="contact.html">Contact</a>
 							</li>
 						</ul>
@@ -185,6 +185,7 @@
 			<ul class="main-menu-m">
 				<li>
 					<a href="index.html">Home</a>
+					<ul class="sub-menu-m">
 					<span class="arrow-main-menu-m">
 						<i class="fa fa-angle-right" aria-hidden="true"></i>
 					</span>
@@ -196,6 +197,10 @@
 
 				<li>
 					<a href="shoping-cart.html">Shoping Cart</a>
+				</li>
+
+				<li>
+					<a href="history.html">Order History</a>
 				</li>
 
 				<li>
@@ -318,99 +323,144 @@
 	<!-- Title page -->
 	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/bg-01.jpg');">
 		<h2 class="ltext-105 cl0 txt-center">
-			Contact
+			Order History
 		</h2>
 	</section>	
-
-
-	<!-- Content page -->
-	<section class="bg0 p-t-104 p-b-116">
+	
+	<section class="bg0 p-t-23 p-b-140">
 		<div class="container">
-			<div class="flex-w flex-tr">
-				<div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
-					<form>
-						<h4 class="mtext-105 cl2 txt-center p-b-30">
-							Send Us A Message
-						</h4>
-
-						<div class="bor8 m-b-20 how-pos4-parent">
-							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Your Email Address">
-							<img class="how-pos4 pointer-none" src="images/icons/icon-email.png" alt="ICON">
-						</div>
-
-						<div class="bor8 m-b-30">
-							<textarea class="stext-111 cl2 plh3 size-120 p-lr-28 p-tb-25" name="msg" placeholder="How Can We Help?"></textarea>
-						</div>
-
-						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
-							Submit
-						</button>
-					</form>
+			<div class="p-b-10">
+				<h3 class="ltext-103 cl5">
+					Order History
+				</h3>
+			</div>
+			<div class="flex-w flex-sb-m p-b-52">
+				<div class="flex-w flex-l-m filter-tope-group m-tb-10">					
 				</div>
-
-				<div class="size-210 bor10 flex-w flex-col-m p-lr-93 p-tb-30 p-lr-15-lg w-full-md">
-					<div class="flex-w w-full p-b-42">
-						<span class="fs-18 cl5 txt-center size-211">
-							<span class="lnr lnr-map-marker"></span>
-						</span>
-
-						<div class="size-212 p-t-2">
-							<span class="mtext-110 cl2">
-								Address
-							</span>
-
-							<p class="stext-115 cl6 size-213 p-t-18">
-								Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US
-							</p>
-						</div>
+				<div class="flex-w flex-c-m m-tb-10">
+					<div class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search">
+						<i class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search"></i>
+						<i class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"></i>
+						Search
 					</div>
+				</div>
+				
+				<!-- Search product -->
+				<div class="dis-none panel-search w-full p-t-10 p-b-15">
+					<div class="bor8 dis-flex p-l-15">
+						<button class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
+							<i class="zmdi zmdi-search"></i>
+						</button>
 
-					<div class="flex-w w-full p-b-42">
-						<span class="fs-18 cl5 txt-center size-211">
-							<span class="lnr lnr-phone-handset"></span>
-						</span>
-
-						<div class="size-212 p-t-2">
-							<span class="mtext-110 cl2">
-								Lets Talk
-							</span>
-
-							<p class="stext-115 cl1 size-213 p-t-18">
-								+1 800 1236879
-							</p>
-						</div>
-					</div>
-
-					<div class="flex-w w-full">
-						<span class="fs-18 cl5 txt-center size-211">
-							<span class="lnr lnr-envelope"></span>
-						</span>
-
-						<div class="size-212 p-t-2">
-							<span class="mtext-110 cl2">
-								Sale Support
-							</span>
-
-							<p class="stext-115 cl1 size-213 p-t-18">
-								contact@example.com
-							</p>
-						</div>
-					</div>
+						<input class="mtext-107 cl2 size-114 plh2 p-r-15" type="text" name="search-product" placeholder="Search">
+					</div>	
 				</div>
 			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<!-- Grid row -->
+					<div class="row">
+						<!-- Grid column -->
+		
+						<!-- Grid column -->
+					</div>
+					<!-- Grid row -->
+					<!--Table-->
+					<table class="table table-hover table-responsive mb-0">
+						<!--Table head-->
+						<thead>
+							<tr>
+								<th scope="row">Transaction ID</th>
+								<th class="th-lg"><a>Date</a></th>
+								<th class="th-lg"><a href="">Product</a></th>
+								<th class="th-lg"><a href="">Total</a></th>
+								<th class="th-lg"><a href="">Status</a></th>
+							</tr>
+						</thead>
+						<!--Table head-->
+						<!--Table body-->
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>13/01/2024</td>
+								<td>1x Baby-G Digital Watch</td>
+								<td>$23,5</td>
+								<td class="order-status pending">Pending Payment</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>14/02/2024</td>
+								<td>1x Baby-G Digital Watch</td>
+								<td>$23,5</td>
+								<td class="order-status shipped">Shipped</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>15/01/2024</td>
+								<td>1x Baby-G Digital Watch</td>
+								<td>$23,5</td>
+								<td class="order-status delivered">Delivered</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>16/01/2024</td>
+								<td>1x Baby-G Digital Watch</td>
+								<td>$23,5</td>
+								<td class="order-status delivered">Delivered</td>
+		
+							</tr>
+						</tbody>
+						<!--Table body-->
+					</table>
+					<!--Bottom Table UI-->
+					<div class="d-flex justify-content-center">
+						<!--Pagination -->
+						<nav class="my-4 pt-2">
+							<ul class="pagination pagination-circle pg-blue mb-0">
+								<!--First-->
+								<li class="page-item disabled clearfix d-none d-md-block"><a class="page-link">First</a></li>
+								<!--Arrow left-->
+								<li class="page-item disabled">
+									<a class="page-link" aria-label="Previous">
+											<span aria-hidden="true">&laquo;</span>
+											<span class="sr-only">Previous</span>
+										</a>
+								</li>
+								<!--Numbers-->
+								<li class="page-item active"><a class="page-link">1</a></li>
+								<li class="page-item"><a class="page-link">2</a></li>
+								<li class="page-item"><a class="page-link">3</a></li>
+								<li class="page-item"><a class="page-link">4</a></li>
+								<li class="page-item"><a class="page-link">5</a></li>
+								<!--Arrow right-->
+								<li class="page-item">
+									<a class="page-link" aria-label="Next">
+											<span aria-hidden="true">&raquo;</span>
+											<span class="sr-only">Next</span>
+										</a>
+								</li>
+								<!--First-->
+								<li class="page-item clearfix d-none d-md-block"><a class="page-link">Last</a></li>
+							</ul>
+						</nav>
+						<!--/Pagination -->
+					</div>
+					<!--Bottom Table UI-->
+				</div>
+			</div>
+			
+			
 		</div>
-	</section>	
+	</section>
 	
+		
+
+
+
 	
-	<!-- Map -->
-	<div class="map">
-		<div class="size-303" id="google_map" data-map-x="40.691446" data-map-y="-73.886787" data-pin="images/icons/pin.png" data-scrollwhell="0" data-draggable="1" data-zoom="11"></div>
-	</div>
-
-
-
-	<!-- Footer -->
-	<footer class="bg3 p-t-75 p-b-32">
+	  <!-- Footer -->
+	  <footer class="bg3 p-t-75 p-b-32">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-lg-3 p-b-50">
@@ -530,7 +580,7 @@
 					</a>
 
 					<a href="#" class="m-all-1">
-						<img src="images/icons/icon-pay-04.png" alt="ICON-PAY">
+						<img src="images/icons/icon-pay-04.png" alt="woICON-PAY">
 					</a>
 
 					<a href="#" class="m-all-1">
@@ -547,14 +597,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			</div>
 		</div>
 	</footer>
+		
 
-
-	<!-- Back to top -->
-	<div class="btn-back-to-top" id="myBtn">
-		<span class="symbol-btn-back-to-top">
-			<i class="zmdi zmdi-chevron-up"></i>
-		</span>
-	</div>
+	
 
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -593,10 +638,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		});
 	</script>
 <!--===============================================================================================-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
-	<script src="js/map-custom.js"></script>
-<!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
+	
 </body>
 </html>
