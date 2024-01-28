@@ -1566,9 +1566,20 @@
           .find(".js-name-detail")
           .html();
         $(this).on("click", function () {
-          swal(nameProduct, "is added to cart !", "success");
+          swal(nameProduct, "is added to cart !", "success").then(function() {
+				// Setelah pengguna mengklik OK, lakukan pengalihan (redirect) ke halaman keranjang
+				location.href = "./shoping-cart.html"; 
         });
-      });
+      })
+      // $('.js-addcart-detail').each(function(){
+			// var nameProduct = $(this).parent().parent().parent().parent().find('.js-name-detail').html();
+			// $(this).on('click', function(){
+			// 	swal(nameProduct, "is added to cart !", "success").then(function() {
+			// 	// Setelah pengguna mengklik OK, lakukan pengalihan (redirect) ke halaman keranjang
+			// 	location.href = "./shoping-cart.html"; // Ganti dengan URL keranjang sesuai kebutuhan Anda
+    	// 	});
+			// })
+		});
     </script>
     <!--===============================================================================================-->
     <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
